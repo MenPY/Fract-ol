@@ -21,7 +21,8 @@
 * Runs both on MacOS and Linux
 
 ## Controls
-* Cycle color-schemes with F key
+* Cycle color-schemes with F
 * Zoom in and out with the mousewheel or with Z and X
 * Press J to fix the Julia set
+* Press R to reset fractal
 * Press ESC to exit
