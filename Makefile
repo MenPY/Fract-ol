@@ -39,7 +39,7 @@ $(OBJDIR)%.o: $(SRCDIR)%.c $(INCL)
 	@gcc $(FLAGS) -c $< -o $@ -I$(INCLDIR)
 
 $(NAME): $(OBJ) $(LIBFT) $(MLXLIB)
-	@gcc $(OBJ) -o $(NAME) $(MLX) $(MATHLIB) $(MULTHREAD) $(LIBFT_FLAGS)
+	@gcc $(OBJ) -o $(NAME) $(MLX) $(MATHLIB) $(LIBFT_FLAGS)
 	@printf "Done\n"
 $(LIBFT):
 	@printf "\tCompiling libft.a...\n"
@@ -55,52 +55,3 @@ fclean: clean
 	@printf "\tExecutable '$(NAME)' removed\n"
 	@make -sC $(LIBFT_DIR) fclean
 re: fclean all
-
-
-
-
-# ifeq ($(shell uname -s), Linux)
-# MLX		= ./miniLibX_X11/
-# MLX_LNK	= -L $(MLX) -l mlx -lXext -lX11
-# else
-# MLX		= ./minilibx_opengl_20191021/
-# MLX_LNK	= -L $(MLX) -l mlx -framework OpenGL -framework AppKit
-# endif
-
-# MLX_INC	= -I $(MLX)
-# MLX_LIB	= $(addprefix $(MLX),mlx.a)
-
-# # ft library
-# FT		= ./libft/
-# FT_LIB	= $(addprefix $(FT),libft.a)
-# FT_INC	= -I ./libft
-# FT_LNK	= -L ./libft -l ft -l pthread
-
-# all: obj $(FT_LIB) $(MLX_LIB) $(NAME)
-
-# obj:
-# 	mkdir -p $(OBJDIR)
-
-# $(OBJDIR)/%.o:$(SRCDIR)/%.c
-# 	$(CC) $(CFLAGS) $(MLX_INC) $(FT_INC) -I $(INCLDIR) -o $@ -c $<
-
-# $(FT_LIB):
-# 	@make -C $(FT)
-
-# $(MLX_LIB):
-# 	@make -C $(MLX)
-
-# $(NAME): $(OBJ)
-# 	$(CC) $(OBJ) $(MLX_LNK) $(FT_LNK) -lm -o $(NAME)
-
-# clean:
-# 	rm -rf $(OBJDIR)
-# 	make -C $(FT) clean
-# 	make -C $(MLX) clean
-
-# fclean: clean
-# 	rm -rf $(NAME)
-# 	make -C $(FT) fclean
-
-# re: fclean all
-
