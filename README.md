@@ -2,7 +2,6 @@
 
 A simple fractal renderer.
 
-https://user-images.githubusercontent.com/83786471/148645517-9495495b-a4ff-4eac-a462-fc24fad494e9.mp4
 
 Features
 Render different fractals: mandelbrot, julia.
