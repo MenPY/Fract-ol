@@ -1,6 +1,6 @@
 # Fract-ol
 
-A simple fractal renderer. 42 School project
+### A simple fractal renderer. 42 School project
 
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/83786471/148645953-a272b901-7454-462d-8970-44d279a42ad6.gif)
 
