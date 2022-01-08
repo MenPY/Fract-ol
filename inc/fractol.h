@@ -32,13 +32,7 @@
 #  define KB_DOWN		65364
 #  define KB_LEFT		65361
 #  define KB_RIGHT		65363
-#  define KP_ADD		65451
-#  define KP_SUBTRACT	65453
-#  define KB_I			105
-#  define KB_U			117
 #  define KB_R			114
-#  define KP_4			65430
-#  define KP_2			65433
 #  define KB_F			102
 #  define KB_J			106 
 # else
@@ -49,13 +43,7 @@
 #  define KB_DOWN		125
 #  define KB_LEFT		123
 #  define KB_RIGHT		124
-#  define KP_ADD		69
-#  define KP_SUBTRACT	78
-#  define KB_I			34
-#  define KB_U			32
 #  define KB_R			15
-#  define KP_4			86
-#  define KP_2			84
 #  define KB_F			3
 #  define KB_J			38
 # endif
